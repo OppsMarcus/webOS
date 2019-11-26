@@ -1,0 +1,13 @@
+Install every libs for sure
+
+sudo apt-get update
+
+sudo apt-get install gawk wget git diffstat unzip texinfo gcc-multilib \
+     build-essential chrpath socat libsdl1.2-dev xterm picocom ncurses-dev lzop \
+     gcc-arm-linux-gnueabihf
+
+sudo apt-get install uuid uuid-dev zip lzop gperf zlib1g-dev \
+                     liblz-dev liblzo2-2 liblzo2-dev u-boot-tools lib32z1 flex git-core \
+                    curl mtd-utils android-tools-fsutils
+
+sudo apt-get install openjdk-8-jdk
