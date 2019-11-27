@@ -11,3 +11,15 @@ sudo apt-get install uuid uuid-dev zip lzop gperf zlib1g-dev \
                     curl mtd-utils android-tools-fsutils
 
 sudo apt-get install openjdk-8-jdk
+
+git clone https://github.com/webosose/build-webos.git
+
+sudo ./scripts/prerequisites.sh
+
+./mcf raspberrypi3
+
+source oe-init-build-env
+
+bitbake webos-image
+
+sudo dd if = *.rpi-sdimg of = /dev/sd* bs=1M
